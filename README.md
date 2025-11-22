@@ -12,4 +12,19 @@ scsamplelist.txt:A list file containing the sample names is prepared, and the FA
 scoptions.cfg:The configuration file used for the analysis specifies the required analysis types and methods.
 ![logo](images/scoptions.png)
 
+After downloading the Docker files, merge them and then extract (decompress) the archive.
+```bash
+cat scteam.gz.part.* > scteam.tar.gz
+tar -xzf scteam.tar.gz
+dokcer load -i scteam.tar
+```
+Perform scRNA-seq analysis starting from FASTQ data.
+```bash
+docker run --rm -it \
+  -v $(pwd):/DATA \
+  -v $(pwd)/DATABANK:/DATABANK \
+  -p 5000:5000
+  scteam:flatten bash /home/code/
+```
+
 
