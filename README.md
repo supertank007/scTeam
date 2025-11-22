@@ -6,3 +6,10 @@ The Docker image is hosted at: https://huggingface.co/shuaigeWENHAO/scteam
 
 First, in the folder where the data are stored, we create the configuration file and the list file as required(scoptions.cfg and scsamplelist.txt).
 
+scsamplelist.txt:A list file containing the sample names is prepared, and the FASTQ files are placed into their corresponding folders.
+![logo](images/list.png)
+
+scoptions.cfg:The configuration file used for the analysis specifies the required analysis types and methods.
+![logo](images/scoptions.png)
+
+
