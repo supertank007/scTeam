@@ -38,3 +38,20 @@ docker run --rm -it \
 
 ![logo](images/FigureS1.png)
 
+Microbial analysis in single-cell sequencing
+```bash
+docker run --rm -it \
+  -v $(pwd):/DATA \
+  -v $(pwd)/DATABANK:/DATABANK \
+  -p 5000:5000
+  scteam:flatten bash /home/code/scmicrobio.sh
+```
+Full-process analysis based on AI agents
+```bash
+docker run --rm -it \
+  -v $(pwd):/DATA \
+  -v $(pwd)/DATABANK:/DATABANK \
+  -p 5000:5000
+  scteam:flatten python /home/code/scteamagent.py
+```
+
