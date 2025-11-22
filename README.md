@@ -24,7 +24,17 @@ docker run --rm -it \
   -v $(pwd):/DATA \
   -v $(pwd)/DATABANK:/DATABANK \
   -p 5000:5000
-  scteam:flatten bash /home/code/
+  scteam:flatten bash /home/code/cellranger.sh
 ```
+
+Perform single-cell analysis starting from the expression matrix.
+```bash
+docker run --rm -it \
+  -v $(pwd):/DATA \
+  -v $(pwd)/DATABANK:/DATABANK \
+  -p 5000:5000
+  scteam:flatten bash /home/code/scRNA.sh
+```
+
 
 
