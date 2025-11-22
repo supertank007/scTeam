@@ -55,3 +55,5 @@ docker run --rm -it \
   scteam:flatten python /home/code/scteamagent.py
 ```
 
+![logo](images/aia.png)
+![logo](images/FigureS8.png)
