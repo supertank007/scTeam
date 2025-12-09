@@ -20,7 +20,7 @@ After downloading the Docker files, merge them and then extract (decompress) the
 ```bash
 cat scteam.gz.part.* > scteam.tar.gz
 gunzip scteam.tar.gz
-dokcer load -i scteam.tar
+docker load -i scteam.tar
 cat scTeamBANK.tar.gz.part.* > scTeamBANK.tar.gz
 tar -xzf scTeamBANK.tar.gz
 ```
