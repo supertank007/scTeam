@@ -23,6 +23,8 @@ gunzip scteam.tar.gz
 docker load -i scteam.tar
 cat scTeamBANK.tar.gz.part.* > scTeamBANK.tar.gz
 tar -xzf scTeamBANK.tar.gz
+#(option)
+rm scteam.gz.part.* scteam.tar scTeamBANK.tar.gz
 ```
 Perform scRNA-seq analysis starting from FASTQ data.
 ```bash
