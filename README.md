@@ -19,8 +19,10 @@ scoptions.cfg:The configuration file used for the analysis specifies the require
 After downloading the Docker files, merge them and then extract (decompress) the archive.
 ```bash
 cat scteam.gz.part.* > scteam.tar.gz
-tar -xzf scteam.tar.gz
+gunzip scteam.tar.gz
 dokcer load -i scteam.tar
+cat scTeamBANK.tar.gz.part.* > scTeamBANK.tar.gz
+tar -xzf scTeamBANK.tar.gz
 ```
 Perform scRNA-seq analysis starting from FASTQ data.
 ```bash
